@@ -1,0 +1,10 @@
+<h1>Users List</h1>
+
+<% @users.each do |user| %>
+	<%= render '/search/user', client: user %>
+<% end %>
+
+
+<h1><%= @post.title %>
+
+<%= @post.body %>
